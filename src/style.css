@@ -149,7 +149,7 @@ nav a:hover {
   margin-bottom: 4rem;
 }
 
-.drink {
+/*.drink {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,7 +214,7 @@ nav a:hover {
 
 .order-btn:active {
   background-color: #e67e51;
-}
+}*/
 
 /*.layer {
   display: flex;
