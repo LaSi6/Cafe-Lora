@@ -1,4 +1,6 @@
 import './style.css';
+import './Layer/index.js'
+import { Layer } from './Layer/index.js';
 
 console.log('funguju!');
 //Navigace (3)
@@ -29,3 +31,24 @@ orderBtn.addEventListener('click', () => {
         ordered = true;
     }
 });
+
+//Ingredience jako komponenty
+
+const ingredients = [
+    {
+        color: '#feeeca',
+        label: 'mléčná pěna',
+    },
+    {
+        color: '#fed7b0',
+        label: 'teplé mléko',
+    },
+    {
+        color: '#613916',
+        label: 'espresso',
+    },
+];
+const drinkIngr = document.querySelector('.drink__info');
+ingredients.forEach((item) => {
+    drinkIngr.appendChild(Layer(item));
+})
